@@ -15,8 +15,8 @@ namespace MvcMusicStore.Controllers
 
         public ActionResult About()
         {
-            ViewBag.Message = "I Like cake!";
-
+            ViewBag.Message = "Your application description page.";
+            ViewBag.CurrentTime = DateTime.Now;
             return View();
         }
 
@@ -26,5 +26,11 @@ namespace MvcMusicStore.Controllers
 
             return View();
         }
+
+        public ActionResult Edit()
+        {
+            return View();
+        }
+
     }
 }
