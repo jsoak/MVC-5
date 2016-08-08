@@ -1,0 +1,38 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <script src="~/Scripts/knockout-3.4.0.js"></script>
+    <script src="~/Scripts/jquery-3.1.0.js"></script>
+    <script src="~/Scripts/home.js"></script>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div id="work"> 
+        <div class="pGroup">
+            <p id="notwork">First name: <strong data-bind="text: firstName"></strong></p>
+            <span id="notwork2">Working</span>
+            <p id="realwork" data-bind="text: lastName"></p>
+        </div>
+
+        <script type="text/javascript">
+            // This is a simple *viewmodel* - JavaScript that defines the data and behavior of your UI
+            function AppViewModel() {
+                this.firstName = "Bert";
+                this.lastName = "Bertington";
+                this.age = "34";
+                this.gender = "Male";
+            }
+
+            // Activates knockout.js
+            ko.applyBindings(new AppViewModel());
+        </script>
+    </div>
+</body>
+</html>
