@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "Game";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+<script src="~/Scripts/game_script.js"></script>
+<div id="header">
+
+</div>
+
+<div id="contents">
+    <div id="main">
+        <div class="box">
+            <div>
+                <div class="header">
+                    <h3>The Old Maiden</h3>
+                </div>
+
+
+                <div class="body">
+                    <div>
+                        <h3>CPU</h3>
+                        <div id="div1">
+                            <span id="cpuDeck"></span>
+                        </div>
+                    </div>
+
+                    <div class="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
+                        <span id="cpuDrop"></span>
+                    </div>
+                    <div>
+                        <h3>Player</h3>
+                        <div id="div2">
+                            <span id="playerDeck"></span>
+                        </div>
+                    </div>
+
+                    <div>
+                        <input type="button" id="autoPairBtn" name="autoPairBtn" value="Auto Pair" />
+                        &nbsp;
+                        <input type="button" id="playerTurnOver" name="playerTurnOver" value="Turn Over" />
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
