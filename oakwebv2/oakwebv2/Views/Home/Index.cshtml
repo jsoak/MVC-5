@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "Index";
+}
+<script src="~/Scripts/jquery-1.10.2.js"></script>
+<script src="~/Scripts/myscripts.js"></script>
+
+<style>
+    .example {     
+    background:#fff;
+    border:1px solid #ccc;
+    cursor:pointer;
+    float:left;
+    margin:5px; padding:20px;
+    width:100px; height:100px;
+}
+.expose {
+    position:relative;
+}
+
+#overlay {
+    background:rgba(0,0,0,0.8);
+    display:none;
+    width:100%; height:100%;
+    position:absolute; top:0; left:0; z-index:99998;
+}
+</style>
+<h2>Index</h2>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-sm-10">
+            <div class="jumbotron">
+                <h1>Bootstrap Tutorial</h1>
+                <p>
+                    Bootstrap is the most popular HTML, CSS, and JS framework for developing
+                    responsive, mobile-first projects on the web.
+                </p>
+            </div>
+        </div>
+        <div class="col-sm-2">.col-sm-2</div>
+    </div>
+
+    <div class="example expose">Some content</div>
+    <textarea class="expose">Some content</textarea><br />
+    <input type="text" class="expose" value="Some content" /><br />
+    <div class="example expose">Some content</div><br /><br />
+    <textarea class="expose">Some content</textarea>
+    <div id="overlay"></div>
+</div>
