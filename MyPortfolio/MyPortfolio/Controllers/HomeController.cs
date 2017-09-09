@@ -9,8 +9,22 @@ namespace MyPortfolio.Controllers
     public class HomeController : Controller
     {
         // GET: Home
-        public ActionResult Index()
+        public ViewResult Index()
         {
+            return View();
+        }
+
+        public ViewResult About()
+        {
+            ViewBag.Message = "Your application description page.";
+
+            return View();
+        }
+
+        public ViewResult Contact()
+        {
+            ViewBag.Message = "Your contact page.";
+
             return View();
         }
     }
