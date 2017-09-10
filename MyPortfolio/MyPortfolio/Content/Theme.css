@@ -1,2 +1,12 @@
 ﻿body {
+    /*background: #000000 url(../Content/Images/Background/background.png);*/
+    background: #000000;
+    background-attachment: fixed;
+    background-position: center; 
+    background-repeat: no-repeat;
+    color: #f4f4fc;
 }
+
+/*.ContentBox{
+    background: #f4f4fc
+}*/
