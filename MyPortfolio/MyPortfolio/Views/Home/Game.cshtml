@@ -1,0 +1,81 @@
+﻿@{
+    ViewBag.Title = "About";
+}
+
+<script src="~/Scripts/gamescript.js"></script>
+
+<h1>This is About page</h1>
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script src="script/gamescript.js"></script>
+    <link rel="stylesheet" href="~/Content/game.css" type="text/css">
+</head>
+<body>
+
+    <div id="background">
+        <div id="page">
+            <div id="contents">
+
+                <div id="adbox">
+
+                    <img src="">
+                    <h1></h1>
+                </div>
+
+                <div id="main">
+                    <div class="box">
+                        <div>
+                            <div class="header">
+                                <h3>The Old Maiden</h3>
+                            </div>
+
+
+                            <div class="body">
+                                <div>
+                                    <h3>CPU</h3>
+                                    <div id="div1">
+                                        <span id="cpuDeck"></span>
+                                    </div>
+                                </div>
+
+                                <div class="div3" ondrop="drop(event)" ondragover="allowDrop(event)">
+                                    <span id="cpuDrop"></span>
+                                </div>
+                                <div>
+                                    <h3>Player</h3>
+                                    <div id="div2">
+                                        <span id="playerDeck"></span>
+                                    </div>
+                                </div>
+
+                                <div>
+                                    <input type="button" id="autoPairBtn" name="autoPairBtn" value="Auto Pair" />
+                                    &nbsp;
+                                    <input type="button" id="playerTurnOver" name="playerTurnOver" value="Turn Over" />
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div id="sidebar">
+                    <div class="section">
+                        <h5>How to Play</h5>
+                        <ol>
+                            <li>Your goal is to finish pairing your cards.</li>
+                            <li>You lose if you hold onto the Joker card until the last turn.</li>
+                            <li>You will be given a deck of cards, split evenly with your opponent.</li>
+                            <li>Pick a card from the opponent's hand during your turn</li>
+                            <li>One of you holds the Joker card, so make sure your opponent takes the Joker!</li>
+
+                        </ol>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

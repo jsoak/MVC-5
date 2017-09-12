@@ -1,4 +1,7 @@
-﻿<div id="contents">
+﻿@{
+    ViewBag.Title = "Home";
+}
+<div id="contents">
     @*Ads?
     <div id="adbox">
 
@@ -40,34 +43,19 @@
                     <div class="col-lg-6">
                         <div class="section">
                             <h5>Browse through my portfolio</h5>
-                            <a href="portfolio.aspx"><img src="images/ASP.NET Title.png" alt="Img" width="285"></a>
-                            <a href="portfolio.aspx"><img src="images/XML Title.png" alt="Img" width="285"></a>
+                            <a href="portfolio.aspx"><img class="img-thumbnail img-responsive" src="~/Content/Images/ASP.NET Title.png" alt="Img" width="285"></a>
+                            <a href="portfolio.aspx"><img class="img-thumbnail img-responsive" src="~/Content/Images/XML Title.png" alt="Img" width="285"></a>
                         </div>
                         <div class="row">
                             <div class="col-lg-10">
                                 <div class="section">
                                     <h5>Play some games and relax</h5>
-                                    <a href="games.aspx"><img src="images/play-card.jpg" alt="Img" width="285"></a>
+                                    <a href="games.aspx"><img class="img-thumbnail img-responsive" src="~/Content/Images/play-card.jpg" alt="Img" width="285"></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                @*<div class="row">
-                    <div class="col-lg-6">
-                        <div class="header">
-                            <h2>News</h2>
-                        </div>
-                        <div class="body">
-                            <ul>
-                                <li>Opened for further testing!</li>
-                                <li>Old Maiden Card Game is now available for alpha testing.</li>
-                                <li>Old Maiden will be tested for JQuery Animation for special effects.</li>
-                                <li>Review session page will be up within two weeks.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>*@
             </div>
             @*SideBar contains the link. Contains second row*@
             @*<div class="sidebar">

@@ -1,0 +1,98 @@
+﻿body {
+	background: #ffb744 url(../images/background.jpg);
+	font-family: "Times New Roman", Times, serif;
+	margin: 0;
+}
+
+#page {
+	width: 960px;
+	margin: 0 auto;
+}
+img {
+	border: 0;
+}
+
+/*------------------------------ CONTENTS ------------------------------*/
+#contents {
+	display: inline-block;
+	width: 1200px;
+	padding: 0 47px;
+}
+
+#contents h1 {
+	color: #316e66;
+	font: 26px/30px "Times New Roman", Times, serif;
+	margin: 18px 0 20px;
+	padding-left: 2px;
+	text-transform: uppercase;
+}
+#contents p {
+	color: #5a4535;
+	font-size: 15px;
+	line-height: 30px;
+	margin: 0;
+	padding: 0 0 24px 2px;
+}
+#contents p a {
+	color: #5a4535;
+}
+
+/** MAIN **/
+#main {
+	float: left;
+	min-height: 500px;
+	width: 865px;
+}
+
+#main div.box {
+	background-position: left bottom;
+	margin-bottom: 12px;
+	padding: 0 0 6px;
+}
+#main div.box > div > header{
+    font-weight: normal;
+    float:left;
+}
+
+
+#main div.box > div > div.header {
+	background-position: -1145px top;
+	padding: 6px 0 0;
+        width: 865px;
+        
+}
+#main div.box > div > div {
+	background-position: -572px top;
+	
+	padding: 17px;
+        background-color: white;
+}
+#main div.box h3 {
+	color: #316e66;
+	font-weight: normal;
+	letter-spacing: 1px;
+	border-bottom: 1px dotted #9c8964;
+	margin: 0;
+	padding: 0 4px 12px;
+	text-transform: uppercase;
+}
+
+#main div.box div2{
+    float:left; width:100px; height:35px; margin:10px;padding:10px;border:1px solid #aaaaaa;
+}
+
+#main div.box div.work{
+  
+    img{border:solid 1px red; margin:10px;}
+.selected{
+   box-shadow:0px 12px 22px 1px #333;
+}
+}
+
+#main div.box div.div3{
+    width:800px; 
+    height:140px; 
+    margin:10px;
+    padding:10px;
+    border:1px solid #aaaaaa;
+}

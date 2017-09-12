@@ -27,5 +27,12 @@ namespace MyPortfolio.Controllers
 
             return View();
         }
+
+        public ViewResult Game()
+        {
+            ViewBag.Message = "Your game page.";
+
+            return View();
+        }
     }
 }
