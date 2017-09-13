@@ -158,13 +158,13 @@ var displayCards = function (){
 		//alert("Current CPU Hand Card " + cpuHand[i]);
 
 		if (cpuHand[i] === -1){	
-			//drawCpuHand += '<img src="images/test/-1.png" draggable="true" ondragstart="drag(event)" id="-1" width="50" height="70" onclick = playerChoice(' + cpuHand[i] + ')>';
+		    //drawCpuHand += '<img src="/Content/Images/test/-1.png" draggable="true" ondragstart="drag(event)" id="-1" width="50" height="70" onclick = playerChoice(' + cpuHand[i] + ')>';
 			//alert("Joker is on CPU at " + i + " with the value " + cpuHand[i]);
-			drawCpuHand += '<img src="images/test/back.png" draggable="true" ondragstart="drag(event)" id="-1" width="50" height="70" onclick = playerChoice(' + cpuHand[i] + ')>';
+		    drawCpuHand += '<img src="/Content/Images/test/back.png" draggable="true" ondragstart="drag(event)" id="-1" width="50" height="70" onclick = playerChoice(' + cpuHand[i] + ')>';
 		}
 		else if (cpuHand[i] !== -2 && cpuHand[i] !== 999){
-			//drawCpuHand += '<img src="images/test/' + cpuHand[i] + '.png" draggable="true" ondragstart="drag(event)" id="' + cpuHand[i] + '" width="50" height="70" onclick = playerChoice(' + cpuHand[i] + ')>';
-			drawCpuHand += '<img src="images/test/back.png" draggable="true" ondragstart="drag(event)" id="' + cpuHand[i] + '" width="50" height="70" onclick = playerChoice(' + cpuHand[i] + ')>';
+		    //drawCpuHand += '<img src="/Content/Images/test/' + cpuHand[i] + '.png" draggable="true" ondragstart="drag(event)" id="' + cpuHand[i] + '" width="50" height="70" onclick = playerChoice(' + cpuHand[i] + ')>';
+		    drawCpuHand += '<img src="/Content/Images/test/back.png" draggable="true" ondragstart="drag(event)" id="' + cpuHand[i] + '" width="50" height="70" onclick = playerChoice(' + cpuHand[i] + ')>';
 			
 		} 
 		$("cpuDeck").innerHTML = drawCpuHand;		
@@ -178,12 +178,12 @@ var displayCards = function (){
 		
 		if (playerHand[i] === -1){
 			//alert("Joker is on Player at " + i + " with the value " + playerHand[i]);
-			drawPlayerHand += '<img src="images/test/-1.png" draggable="true" ondragstart="drag(event)" id="-1" width="50" height="70">';
-			//drawPlayerHand += '<img src="images/test/back.png" draggable="true" ondragstart="drag(event)" id="-1" width="50" height="70">';
+		    drawPlayerHand += '<img src="/Content/Images/test/-1.png" draggable="true" ondragstart="drag(event)" id="-1" width="50" height="70">';
+		    //drawPlayerHand += '<img src="/Content/Images/test/back.png" draggable="true" ondragstart="drag(event)" id="-1" width="50" height="70">';
 		} 
 		else if (playerHand[i] !== -2 && playerHand[i] !== 999){
-			drawPlayerHand += '<img src="images/test/' + playerHand[i] + '.png" draggable="true" ondragstart="drag(event)" id="' + playerHand[i] + '" width="50" height="70">';
-			//drawPlayerHand += '<img src="images/test/back.png" draggable="true" ondragstart="drag(event)" id="' + playerHand[i] + '" width="50" height="70">';	
+		    drawPlayerHand += '<img src="/Content/Images/test/' + playerHand[i] + '.png" draggable="true" ondragstart="drag(event)" id="' + playerHand[i] + '" width="50" height="70">';
+		    //drawPlayerHand += '<img src="/Content/Images/test/back.png" draggable="true" ondragstart="drag(event)" id="' + playerHand[i] + '" width="50" height="70">';	
 		}   
 		$("playerDeck").innerHTML = drawPlayerHand;
 		
@@ -191,8 +191,8 @@ var displayCards = function (){
 	
    for (i = 0; i <= 12; i++){
 		if (paired[i] !== 0){
-			middleNewDraw+='<img src="images/test/' + i + '.png" width="50" height="70">';
-			middleNewDraw+='<img src="images/test/' + (i+13) + '.png" width="50" height="70">';
+		    middleNewDraw += '<img src="/Content/Images/test/' + i + '.png" width="50" height="70">';
+		    middleNewDraw += '<img src="/Content/Images/test/' + (i + 13) + '.png" width="50" height="70">';
 		 $("cpuDrop").innerHTML = middleNewDraw;
 		}
 	}
@@ -342,7 +342,7 @@ var autoPairPlayer = function () {
 function playerChoice(card) {
 
     
-    $(card).src = "images/test/" + card + ".png";
+    $(card).src = "/Content/Images/test/" + card + ".png";
 
     //alert(card);
     
